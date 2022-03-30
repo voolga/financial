@@ -1,0 +1,164 @@
+.promo {
+    background-color: var(--dark-bg-color);
+    padding-top: 100px;
+    padding-bottom: 42px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        color: var(--light-text-color);
+        margin: 0 45px 35px 45px;
+        font-family: Montserrat;
+        font-weight: 700;
+
+        @include lg {
+            text-align: left;
+            margin: 0;
+            margin-bottom: 35px;
+            max-width: 509px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        text-align: center;
+        color: var(--light-text-color);
+        margin: 0 67px 35px 67px;
+        font-family: Montserrat;
+        font-weight: 500;
+
+        @include lg {
+            text-align: left;
+            margin: 0;
+            margin-bottom: 35px;
+            max-width: 376px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // по умолчанию flex элементы имеют flex-shrink=1, то есть они растягиваются на всю ширину родительского блока
+        // чтобы кнопки были размером с содержимое, нужно включать свойство align items
+        // Align items по умолчанию имеет значение stretch, соответственно тоже растягивает flex Элементы на всю ширину
+
+        @include lg {
+            flex-direction: row;
+            justify-content: start;
+        }
+    }
+
+    &__button {
+        padding: 10px 36px;
+        margin-bottom: 20px;
+
+        @include lg {
+            margin: 0;
+            margin-right: 10px;
+        }
+    }
+
+    &__button:last-child {
+        margin-bottom: 39px;
+
+        @include md {
+            margin-bottom: 55px;
+        }
+
+        @include lg {
+            margin: 0;
+        }
+    }
+
+    &__bg-img0 {
+        position: absolute;
+        top: 10%;
+        left: -5%;
+
+        @include md {
+            height: 50%;
+        }
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    &__bg-img0-mob {
+        display: none;
+
+        @include lg {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: -5%;
+        }
+    }
+
+    &__images {
+    }
+
+    &__app-image {
+        position: relative;
+        padding-top: 100%;
+        // этот стиль создаст квадрат внутри себя
+    }
+
+    &__bg-img1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+
+    &__bg-img2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+
+    &__main-img {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        height: 99%;
+
+        // как выровнять DIV (элемент) с position: absolute по центру
+        animation: 5s ease-in 0s normal none infinite running rot;
+    }
+
+    @keyframes rot {
+        0% {
+            transform: rotate(-10deg);
+        }
+        25% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: rotate(-10deg);
+        }
+        75% {
+            transform: rotate(10deg);
+        }
+        100% {
+            transform: rotate(-10deg);
+        }
+    }
+}
