@@ -1,0 +1,27 @@
+.strategy {
+    background-color: var(--dark-bg-color);
+    padding-top: 75px;
+    padding-bottom: 28px;
+    padding-left: 74.5px;
+    padding-right: 75.5px;
+    color: var(--light-text-color);
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 80px;
+    }
+
+    &__cards {
+        @include xl {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card:not(:last-child) {
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,56 @@
+.rewiew-card {
+    text-align: center;
+    padding: 40px 48.5px;
+    background-color: var(--light-text-color);
+    border: 1px solid #dedede;
+    border-radius: 5px;
+
+    @include xl {
+
+    }
+
+    &__img {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+
+    &__rate {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 17px;
+    }
+
+    &__rate-img:not(:last-child) {
+        margin-right: 4px;
+    }
+
+    &__descr {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: var(--second-text-color);
+        margin-bottom: 17px;
+    }
+    &__user-name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: var(--text-color);
+    }
+    &__user-pos {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: var(--second-text-color);
+    }
+}

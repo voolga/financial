@@ -1,0 +1,33 @@
+.rewiew {
+    background-color: var(--dark-bg-color);
+    padding-top: 75px;
+    padding-bottom: 85px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: var(--light-text-color);
+
+    &__wrap {
+
+        @include md {
+            padding-left: 102px;
+            padding-right: 102px;
+        }
+
+        @include lg {
+            padding-left: 142px;
+            padding-right: 142px;
+        }
+        @include xl {
+            padding-left: 182px;
+            padding-right: 182px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+    }
+}
