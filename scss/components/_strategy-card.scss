@@ -1,6 +1,13 @@
 .strategy-card {
     display: flex;
     align-items: flex-start;
+    
+
+    @include xl {
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        padding: 35px 27px 35px 20px;
+    }
 
     &__img {
         margin-right: 22px;
