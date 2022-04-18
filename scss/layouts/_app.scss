@@ -1,0 +1,21 @@
+.app {
+    background-color: var(--dark-bg-color);
+    padding-top: 75px;
+    padding-bottom: 80px;
+    padding-left: 68px;
+    padding-right: 68px;
+    color: var(--light-text-color);
+
+    
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+    }
+
+    &__card {
+        margin-bottom: 35px;
+    }
+}

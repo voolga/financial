@@ -14,21 +14,15 @@
         margin-bottom: 80px;
     }
 
-    // &__cards {
-    //     @include xl {
-    //         flex-direction: row;
-    //         flex-wrap: wrap;
-    //     }
-    // }
-    &__card {
-        height: 100%;
-        
-        @include lg {
-            margin-bottom: 35px;
-        }
+    &__col {
+        margin-bottom: 35px;
     }
 
-    &__card:not(:last-child) {
-        margin-bottom: 100px;
+    &__card {
+        height: 100%;
     }
+
+    // &__card:not(:last-child) {
+    //     margin-bottom: 100px;
+    // }
 }

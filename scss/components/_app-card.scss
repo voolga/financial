@@ -1,0 +1,42 @@
+.app-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-text-color);
+    padding: 17px 27px 17px 27px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.4005px;
+    line-height: 15px;
+    letter-spacing: 0.190776px;
+    border: 1.90776px solid var(--light-text-color);
+    border-radius: 9.53881px;
+    color: var(--dark-bg-color);
+
+    @include lg {
+        background-color: transparent;
+        color: var(--light-text-color);
+        font-style: 16px;
+    }
+
+    &__img-mobile {
+        @include lg {
+            display: none;
+        }
+    }
+
+    &__img-desktop {
+        display: none;
+        @include lg {
+            display: block;
+        }
+    }
+
+    &__download {
+        font-size: 20px;
+        @include lg {
+            font-style: 16px;
+        }
+    }
+}

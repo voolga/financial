@@ -1,0 +1,13 @@
+.pricing {
+    background-color: var(--dark-bg-color);
+    padding-top: 75px;
+    padding-bottom: 150px;
+    padding-left: 49px;
+    padding-right: 49px;
+
+
+
+    &__row {
+        display: flex;
+    }
+}

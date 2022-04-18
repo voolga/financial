@@ -20,12 +20,26 @@
         margin: 0 45px 35px 45px;
         font-family: Montserrat;
         font-weight: 700;
+        // position: relative;
 
         @include lg {
             text-align: left;
             margin: 0;
             margin-bottom: 35px;
             max-width: 509px;
+        }
+    }
+
+    &__title::before {
+        content: "";
+        left: -30%;
+        top: 15%;
+        position: absolute;
+        content: url("../assets/images/header_img/bg-img-0-mob.png");
+
+        @include lg {
+            left: 0;
+            top: 0;
         }
     }
 

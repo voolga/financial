@@ -1,0 +1,89 @@
+.pricing-card {
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &__:last-child {
+        margin-bottom: 0;
+    }
+
+    @include lg {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.10000000149011612px;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+    }
+
+    &__descr {
+        //styleName: link;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        color: var(--second-text-color);
+    }
+    &__gen-info {
+        max-width: 217px;
+
+        @include lg {
+            margin-right: 30px;
+        }
+    }
+    &__price-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__wrap-price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price-value {
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0.20000000298023224px;
+        color: var(--primary-color);
+        margin-right: 10px;
+    }
+
+    &__price-currency {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.10000000149011612px;
+        color: var(--primary-color);
+    }
+
+    &__price-payment {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.20000000298023224px;
+        color: var(--disabled-elem-color);
+    }
+
+    &__button {
+        max-width: 162px;
+    }
+}
