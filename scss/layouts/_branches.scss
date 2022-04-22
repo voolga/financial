@@ -1,0 +1,23 @@
+.branches {
+    background-color: var(--dark-bg-color);
+    padding: 125px 49px 110px 49px;
+
+
+    &__row {
+        align-items: center;
+    }
+    &__descr {
+        margin-bottom: 130px;
+
+        @include md {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        margin: 0 auto;
+    }
+}

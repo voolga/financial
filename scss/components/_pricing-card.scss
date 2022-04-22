@@ -16,6 +16,14 @@
         margin-bottom: 0;
     }
 
+    &__gen-info {
+        margin-bottom: 30px;
+
+        @include lg {
+            margin-bottom: 0;
+        }
+    }
+
     &__title {
         font-family: Montserrat;
         font-size: 24px;
