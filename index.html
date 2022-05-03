@@ -371,38 +371,116 @@
     </div>
     <div class="booking">
         <div class="container booking__container">
-            <div class="row booking__row">
-                <div class="col-12 col-md-10">
-                    <img src="assets\images\booking_img\booking.png" alt="" class="booking__img">
-                </div>
-                <div class="col-12 col-md-10">
-                    <p class="booking__title">Get A Free
-                        Quote Here</p>
+            
+            <div class="booking__img-wrap">
+                <img src="assets\images\booking_img\booking.png" alt="" class="booking__img">
+            </div>
+            <div class="booking__wrap">
+                <p class="booking__title">Get A Free
+                    Quote Here
+                </p>
 
-                    <div class="booking__inputs">
-                        <div class="booking__input-item">
-                            <p class="booking__name-title">Name*</p>
-                            <input type="text" class="booking__name-input">
-                        </div>
-                        <div class="booking__input-item">
-                            <p class="booking__email-title">Email*</p>
-                            <input type="text" class="booking__email-input">
-                        </div>
+                <div class="booking__inputs">
 
-                        <select name="departmentList" size="1">
-                            <option disabled selected>Please Select</option>
-                            <option>Электроник</option>
-                            <option>Сыроежкин</option>
-                            <option>Чижиков</option>
-                            <option>Кукушкина</option>
+                    <div class="booking__input-item">
+                        <p class="booking__name-title">Name*</p>
+                        <input type="text" class="booking__name-input booking__input">
+                    </div>
+                    <div class="booking__input-item">
+                        <p class="booking__name-title">Email*</p>
+                        <input type="text" class="booking__email-input booking__input">
+                    </div>
+                    <div class="booking__input-item">
+                        <p class="booking__name-title">Department*</p>
+
+                        <select name="departmentList" class="booking__departmentList booking__input" size="1">
+                            <option disabled selected style='display:none'>Please Select</option>
+                            <option>Finance</option>
+                            <option>Sales</option>
+                            <option>Production</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="booking__input-item">
+                        <p class="booking__name-title">Time*</p>
+
+                        <select name="timeList booking__input" class="booking__timeList booking__input" size="1">
+                            <option disabled selected style='display:none'>4:00 Available</option>
+                            <option>04:00</option>
+                            <option>05:00</option>
+                            <option>06:00</option>
+                            <option>07:00</option>
                         </select>
 
                     </div>
 
                 </div>
+                <button class="booking__button button">Book Appointment</button>
             </div>
+
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 footer__column">
+                    <div class="footer__title">
+                        Get In Touch
+                    </div>
+                    <div class="footer__wrap">
+                        <div class="footer__info">
+
+                        </div>
+                        <div class="footer__icons">
+                            <img src="assets\images\footer_img\fb.svg" alt="fb" class="footer__icon">
+                            <img src="assets\images\footer_img\inst.svg" alt="inst" class="footer__icon">
+                            <img src="assets\images\footer_img\twitter.svg" alt="tw" class="footer__icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 footer__column">
+                    <div class="footer__title">
+                        Company info
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            About Us
+                        </li>
+                        <li class="footer__list-item">Carrier</li>
+                        <li class="footer__list-item">We are hiring</li>
+                        <li class="footer__list-item">Blog</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer__column">
+                    <div class="footer__title">
+                        Features
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Business Marketing</li>
+                        <li class="footer__list-item">User Analytic</li>
+                        <li class="footer__list-item">Live Chat</li>
+                        <li class="footer__list-item">Unlimited Support</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer__column">
+                    <div class="footer__title">
+                        Resources
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">IOS & Android</li>
+                        <li class="footer__list-item">Watch a Demo</li>
+                        <li class="footer__list-item">Customers</li>
+                        <li class="footer__list-item">API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="privacy">
+        <p class="privacy__text">
+            Made With Love By 
+Figmaland All Right Reserved
+        </p>
     </div>
 </body>
 

@@ -15,4 +15,11 @@
         margin-bottom: 60px;
     }
 
+    &__card {
+
+        @include lg {
+            height: 100%;
+        }
+    }
+
 }

@@ -1,0 +1,38 @@
+.footer {
+    padding: 80px 87px 57px 87px;
+    background-color: var(--dark-bg-color);
+    
+&__icons {
+    display: flex;
+}
+    &__icon {
+        margin-right: 22px;
+    }
+
+    &__column {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        color: var(--light-text-color);
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: var(--light-text-color);
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
